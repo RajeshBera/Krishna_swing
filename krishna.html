@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krishna</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+        width: 100%;
+        width: 100%;
+        background: linear-gradient(75deg, rgb(255, 97, 171), rgb(130, 219, 174), rgb(255, 71, 255), rgb(250, 151, 94), rgb(157, 232, 255));
+        background-size: 400% 400%;
+        animation: gradient 15s ease-in-out infinite;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    #krish {
+        animation: krishna 15s linear infinite;
+        z-index: -8;
+        position: absolute;
+        transform: scale(0.8);
+        margin-top: 0em;
+    }
+
+    @keyframes krishna {
+        50% {
+            transform: scale(1.62);
+
+        }
+
+        100% {
+            transform: translateX(25deg);
+        }
+
+    }
+
+    #tree {
+        position: absolute;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
+        width: 35em;
+        animation: tree 8s linear infinite;
+    }
+
+    @keyframes tree {
+        50% {
+            transform: skew(5deg);
+            width: 37em;
+        }
+    }
+
+    .leaves {
+        height: 10em;
+        width: 10em;
+        margin-top: 5em;
+        position: absolute;
+        animation: leaf 10s linear infinite;
+    }
+
+    @keyframes leaf {
+        0% {
+            transform: translateY(19px);
+            opacity: 0;
+        }
+
+        50% {
+
+            opacity: 1;
+        }
+
+        70% {
+
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(40vh);
+            opacity: 0;
+        }
+    }
+
+    .leaves:nth-child(2) {
+        margin-left: 15em;
+        animation-delay: 3s;
+        margin-top: -3em;
+        position: absolute;
+        z-index: -8;
+    }
+
+    .leaves:nth-child(3) {
+        margin-left: 15em;
+        animation-delay: 4s;
+        margin-top: -3em;
+        position: absolute;
+        z-index: -8;
+    }
+
+    #sec1 {
+        margin-top: 30em;
+        z-index: 1;
+        position: absolute;
+        letter-spacing: 2.9em;
+    }
+
+    .flower {
+        height: 10em;
+        animation: flower1 5s linear infinite;
+        transform: scale(0.7);
+    }
+
+    @keyframes flower1 {
+        50% {
+            transform: skewX(12deg);
+            transform: scale(0.7);
+
+        }
+    }
+
+    .flower2 {
+        height: 8em;
+        animation: flower2 5s linear infinite;
+        transform: scale(0.7);
+
+    }
+
+    @keyframes flower2 {
+        50% {
+            transform: skewY(35deg);
+            transform: scale(0.7);
+
+        }
+    }
+
+    #sec2 {
+        margin-top: 18em;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .grass {
+        height: 25em;
+        animation: grass 8s linear infinite;
+
+        padding: -18em;
+    }
+
+    @keyframes grass {
+        50% {
+            transform: skewX(4deg);
+        }
+    }
+
+    .btr {
+        transform: scale(0.1);
+        position: absolute;
+        animation: butterfly linear infinite 5s;
+    }
+
+    @keyframes butterfly {
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+
+        }
+    }
+
+    #cloud {
+        animation: cloud linear 20s infinite;
+        z-index: -2;
+    }
+
+    @keyframes cloud {
+        0% {
+            opacity: 0;
+            margin-left: -10em;
+
+        }
+
+        20% {
+            opacity: 1;
+           
+
+        }
+
+        100% {
+            opacity: 10;
+
+        }
+    }
+</style>
+
+<body>
+    <img id="tree" src="tree1.png">
+    <img class="leaves" src="leaves.png">
+    <img class="leaves" src="floating_flower1.png" style="width: 25em;height: 20em;transform: scale(0.1);position: absolute;margin-top: -10em;
+    z-index: -8;">
+    <img class="leaves" src="leaves.png">
+    <img class="leaves" src="floating_flower1.png" style="width: 25em;height: 20em;transform: scale(0.1);position: absolute;
+    z-index: -8;">
+    <img id="krish" src="krishna.png">
+
+    <section id="sec1">
+        <img src="flower1.jpg" height="100" width="100" class="flower">
+        <img src="flower2.jpg" height="100" width="100" class="flower2">
+        <img src="flower1.jpg" height="100" width="100" class="flower">
+        <img src="flower4.jpg" height="100" width="100" class="flower2">
+        <img src="flower5.jpg" height="100" width="100" class="flower">
+        <img src="flower4.jpg" height="100" width="100" class="flower2">
+        <img src="flower2.jpg" height="100" width="100" class="flower">
+        <img src="flower1.jpg" height="100" width="100" class="flower2">
+        <img src="flower5.jpg" height="100" width="100" class="flower">
+    </section>
+    <!---- <img src="water_drop.jpg" height="100" width="100" id="drop">-->
+    <section id="sec2">
+        <img src="grass.jpg" height="100" width="120" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="120" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="120" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+        <img src="grass.jpg" height="100" width="120" class="grass">
+        <img src="grass.jpg" height="100" width="100" class="grass">
+    </section>
+    <img id="cloud" src="cloud_reverse.png"
+        style="position: absolute;margin-left:0%;margin-top: -28%;transform: scale(0.7);">
+    <img src="cow.png" style="position: absolute;margin-left: 60%;margin-top: 24%;transform: scale(0.7);">
+    <img class="btr" src="butterfly3.png" style="position: absolute;margin-left: 50%;margin-top: -31%;">
+    <img class="btr" src="butterfly1.png" style="position: absolute;margin-left: 50%;margin-top: -11%;">
+    <img class="btr" src="butterfly2.png" style="position: absolute;margin-left: 54%;margin-top: 1%;">
+    <img class="btr" src="butterfly3.jpg" style="position: absolute;margin-left: 65%;margin-top: 1%;">
+
+
+</body>
+
+</html>
